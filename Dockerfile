@@ -11,7 +11,7 @@ RUN apt-get update -y && \
     libvirt-daemon-system \
     libvirt-dev \
     openssh-server \
-    linux-image-$(uname -r) \
+    linux-image-5.15.0-1042-azure \
     curl \
     net-tools \
     gettext-base \
