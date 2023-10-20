@@ -19,6 +19,8 @@ Vagrant.configure("2") do |config|
         Resize-Partition -DriveLetter "C" -Size (Get-PartitionSupportedSize -DriveLetter "C").SizeMax
         # Enable too long paths
         New-ItemProperty -Path "HKLM:\\SYSTEM\\CurrentControlSet\\Control\\FileSystem" -Name "LongPathsEnabled" -Value 1 -PropertyType DWORD -Force
+        # Install AutoIt
+        choco install autoit
     SHELL
 end
   
